@@ -1,0 +1,22 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "../dist",
+        "baseUrl": "",
+        "sourceMap": true,
+        "declaration": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "mapRoot": "./",
+        "target": "es5",
+        "lib": [
+            "es2016",
+            "dom"
+        ]
+    },
+    "files": [
+        "./index.ts"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "npm-packages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ngm build -p behavior/src --clean"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/core": "^2.4.9",
+    "zone.js": "0.7.2"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^2.4.9",
+    "ngm-cli": "^0.4.4",
+    "typescript": "^2.2.1"
+  }
+}
