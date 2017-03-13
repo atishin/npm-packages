@@ -16,3 +16,8 @@ export interface IListWithCRUD<TViewModel> extends IList<TViewModel> {
 }
 
 export interface IListFromModelWithCRUD<TModel, TViewModel> extends IListFromModel<TModel, TViewModel>, IListWithCRUD<TViewModel> {}
+
+export interface ISelectableList<TViewModel> extends IList<TViewModel> {
+    selectedItem: TViewModel;
+    select(item: TViewModel);
+}
