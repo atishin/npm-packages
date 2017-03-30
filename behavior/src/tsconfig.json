@@ -9,11 +9,13 @@
         "moduleResolution": "node",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
-        "mapRoot": "./",
         "target": "es5",
         "lib": [
             "es2016",
             "dom"
+        ],
+        "typeRoots": [
+            "./../../node_modules/@types"
         ]
     },
     "files": [

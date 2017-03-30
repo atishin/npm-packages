@@ -1,6 +1,6 @@
 {
   "name": "behavior-interfaces",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.6",
   "description": "",
   "private": false,
   "scripts": {
@@ -11,5 +11,8 @@
     "email": "atishin93@gmail.com"
   },
   "license": "MIT",
-  "dependencies": {}
+  "peerDependencies": {
+    "rxjs": "*",
+    "@angular/forms": "*"
+  }
 }

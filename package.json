@@ -6,17 +6,34 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ngm build -p behavior/src --clean"
+    "build": "ngm build -p behavior/src --clean",
+    "update": "npm run updatecli && npm run updateangular",
+    "updatecli": "npm uninstall -g @angular/cli && npm cache clean && npm install -g @angular/cli@latest && npm install @angular/cli@latest --save",
+    "updateangular": "npm install zone.js@latest @angular/core@latest @angular/common@latest @angular/compiler@latest @angular/compiler-cli@latest @angular/forms@latest @angular/http@latest @angular/platform-browser@latest @angular/platform-browser-dynamic@latest @angular/platform-server@latest @angular/router@latest @angular/animations@latest @angular/animations@latest --save"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@angular/core": "^2.4.9",
-    "zone.js": "0.7.2"
+    "@angular/animations": "4.0.1",
+    "@angular/common": "4.0.1",
+    "@angular/compiler": "4.0.1",
+    "@angular/compiler-cli": "4.0.1",
+    "@angular/core": "4.0.1",
+    "@angular/forms": "4.0.1",
+    "@angular/http": "4.0.1",
+    "@angular/platform-browser": "4.0.1",
+    "@angular/platform-browser-dynamic": "4.0.1",
+    "@angular/platform-server": "4.0.1",
+    "@angular/router": "4.0.1",
+    "rxjs": "5.2.0",
+    "zone.js": "0.8.5"
   },
   "devDependencies": {
-    "@angular/compiler": "^2.4.9",
-    "ngm-cli": "^0.4.4",
-    "typescript": "^2.2.1"
+    "@angular/compiler": "4.0.1",
+    "@angular/compiler-cli": "4.0.1",
+    "@angular/forms": "4.0.1",
+    "@angular/core": "4.0.1",
+    "typescript": "2.2.1",
+    "awesome-typescript-loader": "3.1.2"
   }
 }

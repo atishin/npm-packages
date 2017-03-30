@@ -1,4 +1,3 @@
-
 export interface IList<TViewModel> {
     list: TViewModel[];
     read();
@@ -6,7 +5,7 @@ export interface IList<TViewModel> {
 
 export interface IListFromModel<TModel, TViewModel> extends IList<TViewModel>{
     rawList: TModel[];
-    parseData(rawList: TModel[]): TViewModel[];
+    parseData(): TViewModel[];
 }
 
 export interface IListWithCRUD<TViewModel> extends IList<TViewModel> {
@@ -18,6 +17,6 @@ export interface IListWithCRUD<TViewModel> extends IList<TViewModel> {
 export interface IListFromModelWithCRUD<TModel, TViewModel> extends IListFromModel<TModel, TViewModel>, IListWithCRUD<TViewModel> {}
 
 export interface ISelectableList<TViewModel> extends IList<TViewModel> {
-    selectedItem: TViewModel;
-    select(item: TViewModel);
+    selectedItems: TViewModel[];
+    toggleItem(item: TViewModel);
 }

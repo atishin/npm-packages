@@ -1,0 +1,22 @@
+{
+  "main": "index.js",
+  "version": "1.0.0-beta.6",
+  "description": "",
+  "author": {
+    "name": "Anton Tishin",
+    "email": "atishin93@gmail.com"
+  },
+  "license": "MIT",
+  "name": "behavior-interfaces",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "rxjs": "^5.2.0",
+    "@angular/forms": "^4.0.1"
+  },
+  "_id": "behavior-interfaces@1.0.0-beta.6",
+  "devDependencies": {},
+  "dependencies": {}
+}
